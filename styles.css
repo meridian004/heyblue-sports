@@ -1,0 +1,139 @@
+/* Hey Blue! Sports – global styles */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fafafa;
+}
+
+/* Navigation bar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #004aad; /* primary blue */
+  padding: 12px 20px;
+  color: #fff;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar nav li {
+  margin-left: 18px;
+}
+
+.navbar nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.navbar nav a:hover {
+  opacity: 0.8;
+}
+
+/* Hero section */
+/* Hero section uses a subtle gradient instead of an external image */
+.hero {
+  background: linear-gradient(135deg, #f0f4ff 0%, #ffffff 100%);
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  margin: 0 0 15px;
+  font-size: 2.5rem;
+  color: #004aad;
+}
+
+.hero p {
+  margin: 0 auto;
+  max-width: 800px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* Features grid */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  text-align: center;
+}
+
+.feature h2 {
+  margin-top: 0;
+  color: #004aad;
+  font-size: 1.25rem;
+}
+
+.feature p {
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}
+
+/* Call‑to‑action */
+.cta {
+  background-color: #004aad;
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.cta h2 {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.cta p {
+  max-width: 600px;
+  margin: 0 auto 20px;
+  font-size: 1rem;
+}
+
+.cta .btn {
+  display: inline-block;
+  background-color: #fff;
+  color: #004aad;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.cta .btn:hover {
+  background-color: #e6e6e6;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+  font-size: 0.85rem;
+}
