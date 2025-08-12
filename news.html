@@ -7,13 +7,28 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- Site Header -->
+    <!-- Topbar with trending topics -->
+    <div class="topbar">
+      <ul class="trending-list">
+        <li><a href="#">#SuperBowl</a></li>
+        <li><a href="#">#MarchMadness</a></li>
+        <li><a href="#">#WorldSeries</a></li>
+        <li><a href="#">#DraftDay</a></li>
+        <li><a href="#">#StanleyCup</a></li>
+        <li><a href="#">#UFC300</a></li>
+      </ul>
+    </div>
+
+    <!-- Navigation Bar -->
     <header class="navbar">
-      <div class="logo">Hey Blue! Sports</div>
-      <nav>
+      <a href="index.html" class="logo" title="Hey Blue! Sports">Hey Blue! Sports</a>
+      <nav class="main-nav">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="news.html">News</a></li>
           <li><a href="#">Odds</a></li>
+          <li><a href="#">Scores</a></li>
           <li><a href="#">Videos</a></li>
           <li><a href="#">Podcasts</a></li>
           <li><a href="#">Community</a></li>
@@ -22,40 +37,67 @@
       </nav>
     </header>
 
-    <section class="hero">
-      <h1>Latest News</h1>
-      <p>
-        Catch up on the newest stories, game analyses and sports headlines from
-        across the world. This page will dynamically load articles based on
-        your interests.
-      </p>
+    <!-- Sub‑Hero Section -->
+    <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1505843355339-77c2dbb4d6c9?auto=format&fit=crop&w=1650&q=80');">
+      <div class="hero-content">
+        <h1>Latest News</h1>
+        <p>
+          Catch up on the newest stories, game analyses and sports headlines from
+          across the world. This page will dynamically load articles based on
+          your interests.
+        </p>
+      </div>
     </section>
 
-    <section class="news-list" style="max-width: 1200px; margin: 0 auto; padding: 40px 20px;">
-      <!-- Placeholder articles -->
-      <article class="feature" style="margin-bottom: 20px;">
-        <h2>Sample Article Title</h2>
-        <p>
-          This is a placeholder for a news article. In a real implementation,
-          content will be pulled from the CMS and displayed here with
-          images, categories and author information.
-        </p>
-        <a class="btn" href="#" style="margin-top: 10px;">Read More</a>
-      </article>
-      <article class="feature" style="margin-bottom: 20px;">
-        <h2>Another Sample Story</h2>
-        <p>
-          Stay tuned for the latest updates on your favorite teams. Articles
-          like this one will appear as soon as they are published by our
-          editorial team.
-        </p>
-        <a class="btn" href="#" style="margin-top: 10px;">Read More</a>
-      </article>
-      <!-- Additional articles would be appended here -->
+    <!-- News Articles Section -->
+    <section class="articles">
+      <h2>Latest News</h2>
+      <div class="articles-grid">
+        <article class="article-card">
+          <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80" alt="Team huddle" />
+          <div class="article-content">
+            <span class="category">Opinion</span>
+            <h3>Is the dynasty over? Breaking down the champs</h3>
+            <p>This opinion piece explores whether last season’s champions can repeat or if the league has caught up.</p>
+          </div>
+        </article>
+        <article class="article-card">
+          <img src="https://images.unsplash.com/photo-1509475826633-fed577a2c71b?auto=format&fit=crop&w=600&q=80" alt="Fans cheering" />
+          <div class="article-content">
+            <span class="category">Update</span>
+            <h3>Fans return to stadiums in record numbers</h3>
+            <p>After years of restrictions, teams are seeing record attendance as fans flock back to live events.</p>
+          </div>
+        </article>
+        <article class="article-card">
+          <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=600&q=80" alt="Basketball court" />
+          <div class="article-content">
+            <span class="category">Feature</span>
+            <h3>Inside look: The training regimen of top athletes</h3>
+            <p>We go behind the scenes to see how the best in the world prepare mentally and physically.</p>
+          </div>
+        </article>
+        <article class="article-card">
+          <img src="https://images.unsplash.com/photo-1507423919413-0e6a4a4ec936?auto=format&fit=crop&w=600&q=80" alt="Trade rumors" />
+          <div class="article-content">
+            <span class="category">Rumor</span>
+            <h3>Blockbuster trade whispers heating up</h3>
+            <p>Sources hint that a major trade involving multiple All‑Stars could be announced any day.</p>
+          </div>
+        </article>
+      </div>
     </section>
 
+    <!-- Sign‑up Call To Action -->
+    <section class="signup">
+      <h2>Never Miss a Beat</h2>
+      <p>Join our community to unlock personalised news and earn rewards for interacting with our content.</p>
+      <a href="#" class="btn-secondary btn-signup">Join Now</a>
+    </section>
+
+    <!-- Site Footer -->
     <footer class="footer">
-      <p>&copy; 2025 Hey Blue! Sports. All rights reserved.</p>
+      <p>&copy; 2025 Hey&nbsp;Blue! Sports. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>

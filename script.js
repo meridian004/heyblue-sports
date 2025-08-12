@@ -9,12 +9,13 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Example: Show an alert when the sign up button is clicked
-  const signUpBtn = document.querySelector('.cta .btn');
-  if (signUpBtn) {
-    signUpBtn.addEventListener('click', (event) => {
+  // Example: Show an alert when any sign up button is clicked
+  // Bind click handlers to both primary and secondary sign‑up buttons.
+  const signupButtons = document.querySelectorAll('.btn-signup, .btn-primary');
+  signupButtons.forEach((btn) => {
+    btn.addEventListener('click', (event) => {
       event.preventDefault();
       alert('Sign‑up functionality coming soon!');
     });
-  }
+  });
 });

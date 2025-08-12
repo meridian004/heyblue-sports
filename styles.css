@@ -1,150 +1,406 @@
-/* Hey Blue! Sports – global styles */
+/*
+ * Hey Blue! Sports – modern styles inspired by professional sports media
+ *
+ * This stylesheet defines a contemporary layout with a strong visual hierarchy,
+ * responsive grids and vibrant accents. The design draws inspiration from
+ * leading sports sites without copying them directly, using our custom logo
+ * and colour palette to establish a unique brand identity.
+ */
 
-body {
+/* Root colour variables for easy theming */
+:root {
+  --primary-color: #004aad;
+  --secondary-color: #0066d1;
+  --light-gray: #f7f9fb;
+  --dark-gray: #222;
+}
+
+/* Global resets and typography */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
-  color: #333;
-  background-color: #fafafa;
+  color: var(--dark-gray);
+  background-color: #ffffff;
 }
 
-/* Navigation bar */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+/* Site header and navigation */
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #004aad; /* primary blue */
-  padding: 12px 20px;
-  color: #fff;
+  background-color: var(--primary-color);
+  padding: 0 24px;
+  height: 64px;
 }
 
-.navbar .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
+/* Topbar for trending topics */
+.topbar {
+  background-color: var(--secondary-color);
+  color: #ffffff;
+  font-size: 0.8rem;
+  padding: 6px 5%;
+  overflow-x: auto;
 }
 
-.navbar nav ul {
+.topbar .trending-list {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
+  gap: 20px;
+  white-space: nowrap;
 }
 
-.navbar nav li {
-  margin-left: 18px;
-}
-
-.navbar nav a {
-  color: #fff;
-  text-decoration: none;
+.topbar .trending-list li a {
+  color: #ffffff;
   font-weight: 600;
-  transition: opacity 0.2s ease-in-out;
+  text-transform: uppercase;
+  transition: color 0.2s ease;
 }
 
-.navbar nav a:hover {
-  opacity: 0.8;
+.topbar .trending-list li a:hover {
+  color: #f0f0f0;
+}
+
+/* Logo: uses an embedded base64 PNG (32x32) as a background image */
+.navbar .logo {
+  /* Display a text logo instead of an image. The anchor itself carries the
+     brand name and inherits spacing from the nav bar. */
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 24px;
+}
+
+.main-nav li a {
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.main-nav li a:hover {
+  text-decoration: underline;
 }
 
 /* Hero section */
-/* Hero section uses a subtle gradient instead of an external image */
 .hero {
-  background: linear-gradient(135deg, #f0f4ff 0%, #ffffff 100%);
-  text-align: center;
-  padding: 80px 20px;
+  position: relative;
+  /* A fallback gradient; the actual photo is injected via JavaScript */
+  background: linear-gradient(135deg, #0055cc 0%, #002966 100%);
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Overlay to darken hero image for better text contrast */
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+  margin-left: 5%;
 }
 
 .hero h1 {
-  margin: 0 0 15px;
-  font-size: 2.5rem;
-  color: #004aad;
+  margin: 0 0 16px;
+  font-size: 3rem;
+  font-weight: 700;
 }
 
 .hero p {
-  margin: 0 auto;
-  max-width: 800px;
-  font-size: 1.1rem;
-  color: #333;
+  margin: 0 0 24px;
+  font-size: 1.2rem;
+  max-width: 500px;
+  line-height: 1.5;
 }
 
-/* Features grid */
-.features {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-  padding: 50px 20px;
-  max-width: 1200px;
-  margin: 0 auto;
+.btn-primary {
+  display: inline-block;
+  background-color: #ffffff;
+  color: var(--primary-color);
+  padding: 12px 28px;
+  border-radius: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease;
 }
 
-.feature {
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 25px;
-  text-align: center;
+.btn-primary:hover {
+  background-color: #e6e6e6;
 }
 
-.feature h2 {
+/* Scoreboard section */
+.scores {
+  background-color: var(--light-gray);
+  padding: 40px 5%;
+}
+
+.scores h2 {
   margin-top: 0;
-  color: #004aad;
-  font-size: 1.25rem;
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  margin-bottom: 16px;
 }
 
-.feature p {
-  margin-bottom: 0;
+.scoreboard {
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.scoreboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 8px 16px;
+  font-weight: 600;
+}
+
+.scoreboard table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.scoreboard th, .scoreboard td {
+  padding: 12px 16px;
+  text-align: left;
   font-size: 0.95rem;
 }
 
-/* Call‑to‑action */
-.cta {
-  background-color: #004aad;
-  color: #fff;
-  text-align: center;
-  padding: 60px 20px;
+.scoreboard th {
+  background-color: #f0f4ff;
+  color: var(--primary-color);
+  font-weight: 700;
 }
 
-.cta h2 {
+.scoreboard tbody tr:nth-child(even) {
+  background-color: #f9fcff;
+}
+
+/* Multi-league scoreboard grid */
+.scoreboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+/* Articles section */
+.articles {
+  padding: 40px 5%;
+  background-color: #ffffff;
+}
+
+.articles h2 {
   margin-top: 0;
-  font-size: 2rem;
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  margin-bottom: 20px;
 }
 
-.cta p {
+.articles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+.article-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.article-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+}
+
+.article-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  /* Fallback gradient for cards without image sources */
+  background: linear-gradient(135deg, #005bb5 0%, #003a80 100%);
+}
+
+.article-content {
+  padding: 16px;
+  flex-grow: 1;
+}
+
+.article-content .category {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  letter-spacing: 0.05rem;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.article-content h3 {
+  margin: 0 0 8px;
+  font-size: 1.1rem;
+  color: var(--dark-gray);
+}
+
+.article-content p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #666666;
+}
+
+.view-more {
+  display: inline-block;
+  margin-top: 24px;
+  color: var(--primary-color);
+  font-weight: 700;
+  text-decoration: underline;
+  font-size: 0.9rem;
+}
+
+/* Media section */
+.media {
+  background-color: var(--light-gray);
+  padding: 40px 5%;
+}
+
+.media h2 {
+  margin-top: 0;
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.media-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.media-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+}
+
+.media-thumbnail {
+  width: 100%;
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+  /* Fallback gradient for media thumbnails */
+  background: linear-gradient(135deg, #005bb5 0%, #003a80 100%);
+}
+
+.media-info {
+  padding: 16px;
+}
+
+.media-info .type {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  margin-bottom: 6px;
+  display: block;
+}
+
+.media-info h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--dark-gray);
+}
+
+/* Sign‑up section */
+.signup {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  text-align: center;
+  padding: 60px 5%;
+}
+
+.signup h2 {
+  margin: 0 0 16px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.signup p {
+  margin: 0 auto 24px;
   max-width: 600px;
-  margin: 0 auto 20px;
   font-size: 1rem;
 }
 
-.cta .btn {
+.btn-secondary {
   display: inline-block;
-  background-color: #fff;
-  color: #004aad;
-  padding: 12px 24px;
-  border-radius: 5px;
-  text-decoration: none;
+  background-color: #ffffff;
+  color: var(--primary-color);
+  padding: 12px 30px;
+  border-radius: 4px;
   font-weight: 700;
-  transition: background-color 0.2s ease-in-out;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease;
 }
 
-.cta .btn:hover {
+.btn-secondary:hover {
   background-color: #e6e6e6;
 }
 
 /* Footer */
 .footer {
-  text-align: center;
-  padding: 20px;
   background-color: #f5f5f5;
+  padding: 20px 5%;
+  text-align: center;
   font-size: 0.85rem;
-}
-
-/* Logo styling */
-.logo {
-  width: 150px;
-  height: 50px;
-  display: block;
-  background: url(data:image/png;base64,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) no-repeat center;
-  background-size: contain;
-  text-indent: -9999px;
-  margin-right: 10px;
+  color: #555555;
 }

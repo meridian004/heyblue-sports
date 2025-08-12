@@ -7,14 +7,28 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="navbar">
-      <div class="logo">Hey Blue! Sports</div>
+    <!-- Site Header -->
+    <!-- Topbar with trending topics -->
+    <div class="topbar">
+      <ul class="trending-list">
+        <li><a href="#">#SuperBowl</a></li>
+        <li><a href="#">#MarchMadness</a></li>
+        <li><a href="#">#WorldSeries</a></li>
+        <li><a href="#">#DraftDay</a></li>
+        <li><a href="#">#StanleyCup</a></li>
+        <li><a href="#">#UFC300</a></li>
+      </ul>
+    </div>
 
-      <nav>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+      <a href="index.html" class="logo" title="Hey Blue! Sports">Hey Blue! Sports</a>
+      <nav class="main-nav">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="news.html">News</a></li>
           <li><a href="#">Odds</a></li>
+          <li><a href="#">Scores</a></li>
           <li><a href="#">Videos</a></li>
           <li><a href="#">Podcasts</a></li>
           <li><a href="#">Community</a></li>
@@ -23,59 +37,204 @@
       </nav>
     </header>
 
-    <section class="hero">
-      <h1>Welcome to Hey Blue! Sports</h1>
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=1650&q=80');">
+      <div class="hero-content">
+        <h1>All your sports, all in one place</h1>
+        <p>
+          Elevate your game with real‑time odds, exclusive content and a
+          community that rewards you for being a fan.
+        </p>
+        <a href="#" class="btn-primary btn-signup">Get Started</a>
+      </div>
+    </section>
+
+    <!-- Scoreboard Section -->
+    <section class="scores">
+      <h2>Live Scoreboard</h2>
+      <div class="scoreboard-grid">
+        <!-- NFL scoreboard -->
+        <div class="scoreboard">
+          <div class="scoreboard-header">
+            <span class="league">NFL</span>
+            <span class="week">Week&nbsp;1</span>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Matchup</th>
+                <th>Score</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Chiefs vs. Patriots</strong></td>
+                <td>27&nbsp;–&nbsp;24</td>
+                <td>Final</td>
+              </tr>
+              <tr>
+                <td><strong>Steelers vs. Cowboys</strong></td>
+                <td>17&nbsp;–&nbsp;20</td>
+                <td>3rd&nbsp;Qtr</td>
+              </tr>
+              <tr>
+                <td><strong>Packers vs. Bears</strong></td>
+                <td>14&nbsp;–&nbsp;7</td>
+                <td>Halftime</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- NBA scoreboard -->
+        <div class="scoreboard">
+          <div class="scoreboard-header">
+            <span class="league">NBA</span>
+            <span class="week">Day&nbsp;3</span>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Matchup</th>
+                <th>Score</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Lakers vs. Warriors</strong></td>
+                <td>98&nbsp;–&nbsp;102</td>
+                <td>Final</td>
+              </tr>
+              <tr>
+                <td><strong>Nets vs. Celtics</strong></td>
+                <td>89&nbsp;–&nbsp;85</td>
+                <td>4th&nbsp;Qtr</td>
+              </tr>
+              <tr>
+                <td><strong>Bucks vs. Heat</strong></td>
+                <td>61&nbsp;–&nbsp;65</td>
+                <td>Halftime</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- MLB scoreboard -->
+        <div class="scoreboard">
+          <div class="scoreboard-header">
+            <span class="league">MLB</span>
+            <span class="week">Game&nbsp;Day</span>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Matchup</th>
+                <th>Score</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Yankees vs. Red Sox</strong></td>
+                <td>5&nbsp;–&nbsp;3</td>
+                <td>Final</td>
+              </tr>
+              <tr>
+                <td><strong>Dodgers vs. Giants</strong></td>
+                <td>2&nbsp;–&nbsp;6</td>
+                <td>8th&nbsp;Inning</td>
+              </tr>
+              <tr>
+                <td><strong>Cubs vs. Cardinals</strong></td>
+                <td>1&nbsp;–&nbsp;0</td>
+                <td>4th&nbsp;Inning</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Articles Section -->
+    <section class="articles">
+      <h2>Trending Stories</h2>
+      <div class="articles-grid">
+        <article class="article-card">
+          <img src="https://images.unsplash.com/photo-1523293830003-5bf444f2e0c3?auto=format&fit=crop&w=600&q=80" alt="Football action" />
+          <div class="article-content">
+            <span class="category">NFL</span>
+            <h3>Brady's return sets stage for biggest season yet</h3>
+            <p>With a new roster and high expectations, the GOAT isn’t done yet.</p>
+          </div>
+        </article>
+        <article class="article-card">
+          <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=600&q=80" alt="Basketball dunk" />
+          <div class="article-content">
+            <span class="category">NBA</span>
+            <h3>Rookies shine in opening night blowouts</h3>
+            <p>The next generation of basketball stars wasted no time making an impact.</p>
+          </div>
+        </article>
+        <article class="article-card">
+          <img src="https://images.unsplash.com/photo-1505843797822-1be05d5b0a95?auto=format&fit=crop&w=600&q=80" alt="Baseball stadium" />
+          <div class="article-content">
+            <span class="category">MLB</span>
+            <h3>Pennant races heat up as postseason looms</h3>
+            <p>Division rivals battle down the stretch with everything on the line.</p>
+          </div>
+        </article>
+        <article class="article-card">
+          <img src="https://images.unsplash.com/photo-1546549100-1a0a7f639885?auto=format&fit=crop&w=600&q=80" alt="Hockey game" />
+          <div class="article-content">
+            <span class="category">NHL</span>
+            <h3>Power rankings: Who tops the league this week?</h3>
+            <p>A look at the teams climbing the standings and those struggling to keep pace.</p>
+          </div>
+        </article>
+      </div>
+      <a href="news.html" class="view-more">More news</a>
+    </section>
+
+    <!-- Media Section -->
+    <section class="media">
+      <h2>Podcasts &amp; Videos</h2>
+      <div class="media-grid">
+        <div class="media-card">
+          <div class="media-thumbnail"></div>
+          <div class="media-info">
+            <span class="type">Podcast</span>
+            <h3>The Weekly Rundown</h3>
+          </div>
+        </div>
+        <div class="media-card">
+          <div class="media-thumbnail"></div>
+          <div class="media-info">
+            <span class="type">Video</span>
+            <h3>Top 10 Plays of the Week</h3>
+          </div>
+        </div>
+        <div class="media-card">
+          <div class="media-thumbnail"></div>
+          <div class="media-info">
+            <span class="type">Podcast</span>
+            <h3>Behind the Odds</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sign‑up Section -->
+    <section class="signup">
+      <h2>Join the Hey&nbsp;Blue! Community</h2>
       <p>
-        Your all‑in‑one platform for sports news, real‑time odds, videos,
-        podcasts and a thriving fan community. Our mission is to provide
-        comprehensive coverage across every major sport while rewarding our
-        community with a points system that makes participation fun.
+        Sign up to personalise your feed, access exclusive odds and earn points for every action.
       </p>
+      <a href="#" class="btn-secondary btn-signup">Sign Up Now</a>
     </section>
 
-    <section class="features">
-      <div class="feature">
-        <h2>Latest News</h2>
-        <p>
-          Stay updated with breaking news and in‑depth analysis across all
-          sports. Follow your favorite teams and leagues with personalised
-          feeds.
-        </p>
-      </div>
-      <div class="feature">
-        <h2>Real‑Time Odds</h2>
-        <p>
-          View live odds and betting insights powered by our custom
-          odds‑making tools. Make predictions and track line movement.
-        </p>
-      </div>
-      <div class="feature">
-        <h2>Earn Points</h2>
-        <p>
-          Engage with articles, submit picks and participate in contests to earn
-          points redeemable for exclusive rewards and merchandise.
-        </p>
-      </div>
-      <div class="feature">
-        <h2>Community</h2>
-        <p>
-          Join discussions, comment on games and connect with fellow sports
-          fans. Build your profile and climb the leaderboard.
-        </p>
-      </div>
-    </section>
-
-    <section class="cta">
-      <h2>Join Hey Blue! Sports Today</h2>
-      <p>
-        Create an account to personalise your feed, start earning points and
-        never miss a moment of the action.
-      </p>
-      <a class="btn" href="#">Sign Up</a>
-    </section>
-
+    <!-- Site Footer -->
     <footer class="footer">
-      <p>&copy; 2025 Hey Blue! Sports. All rights reserved.</p>
+      <p>&copy; 2025 Hey&nbsp;Blue! Sports. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
