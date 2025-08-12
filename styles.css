@@ -129,6 +129,11 @@ a:hover {
 }
 
 /* Overlay to darken hero image for better text contrast */
+/*
+ * The hero overlay sits above the slideshow images and provides a soft dark tint to
+ * improve text contrast. Reduce the opacity values to allow more of the artwork
+ * to shine through.
+ */
 .hero::after {
   content: "";
   position: absolute;
@@ -136,7 +141,8 @@ a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
+  /* A subtle gradient that darkens the bottom right corner more than the top left */
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15));
   /* Place the overlay above the background slideshow but below the text */
   z-index: 1;
 }
@@ -283,6 +289,16 @@ a:hover {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 24px;
+}
+
+/* Benchmark column styling for Predicted Performance Benchmark values */
+.benchmark-col {
+  text-align: center;
+}
+.benchmark {
+  text-align: center;
+  font-weight: 600;
+  color: var(--secondary-color, #FFB020);
 }
 
 /* Articles section */
