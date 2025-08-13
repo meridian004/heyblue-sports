@@ -3,13 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Hey Blue! Sports brings you live scores, sports news, podcasts, videos and a vibrant community—everything a sports fan needs in one place.">
-  <title>Hey Blue! Sports – All‑in‑one sports platform</title>
+  <meta name="description" content="Stay up to date with the latest scores across NFL, NBA, MLB and more on Hey Blue! Sports.">
+  <title>Scores & Results – Hey Blue! Sports</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="manifest" href="manifest.webmanifest">
 </head>
 <body>
-  <!-- Topbar with trending topics -->
   <div class="topbar">
     <ul class="trending-list">
       <li><a href="#">#SuperBowl</a></li>
@@ -20,9 +19,7 @@
       <li><a href="#">#UFC300</a></li>
     </ul>
   </div>
-  <!-- Navigation Bar -->
   <header class="navbar">
-    <!-- Logo image wrapped in a link back to the home page -->
     <a href="index.html" class="logo" title="Hey Blue! Sports">
       <img src="logo_new.png" alt="Hey Blue! Sports logo showing a baseball umpire making a call" />
     </a>
@@ -39,24 +36,14 @@
       </ul>
     </nav>
   </header>
-  <!-- Hero Section -->
   <section class="hero">
-    <!-- Slideshow showing custom sports artwork instead of external images -->
-    <div class="slides">
-      <div class="slide" style="background-image: url('hero1.jpg');"></div>
-      <div class="slide" style="background-image: url('hero2.jpg');"></div>
-      <div class="slide" style="background-image: url('hero3.jpg');"></div>
-    </div>
     <div class="hero-content">
-      <h1>All your sports, all in one place</h1>
-      <p>Elevate your game with real-time scores, exclusive content and a community that rewards you for being a fan.</p>
-      <a href="community.html" class="btn-primary btn-signup">Get Started</a>
+      <h1>Scores & Results</h1>
+      <p>Stay up to date with the latest scores across all your favorite sports.</p>
     </div>
   </section>
-  <!-- Scoreboard Section -->
   <section class="scores">
-    <h2>Live Scoreboard</h2>
-    <p class="ppb-explainer">PPB (Performance Power Benchmark) is our proprietary metric for comparing teams – it is not related to betting or gambling.</p>
+    <h2>Latest Scores</h2>
     <div class="scoreboard-grid">
       <!-- NFL scoreboard -->
       <div class="scoreboard">
@@ -69,7 +56,6 @@
             <tr>
               <th>Matchup</th>
               <th>Score</th>
-              <th class="benchmark-col">Benchmark (PPB)</th>
               <th>Status</th>
             </tr>
           </thead>
@@ -77,19 +63,16 @@
             <tr>
               <td><strong>Chiefs vs. Patriots</strong></td>
               <td>27 – 24</td>
-              <td class="benchmark">KC –3.5</td>
               <td>Final</td>
             </tr>
             <tr>
               <td><strong>Steelers vs. Cowboys</strong></td>
               <td>17 – 20</td>
-              <td class="benchmark">DAL +2.0</td>
               <td>3rd Qtr</td>
             </tr>
             <tr>
               <td><strong>Packers vs. Bears</strong></td>
               <td>14 – 7</td>
-              <td class="benchmark">GB –1.5</td>
               <td>Halftime</td>
             </tr>
           </tbody>
@@ -106,7 +89,6 @@
             <tr>
               <th>Matchup</th>
               <th>Score</th>
-              <th class="benchmark-col">Benchmark (PPB)</th>
               <th>Status</th>
             </tr>
           </thead>
@@ -114,19 +96,16 @@
             <tr>
               <td><strong>Lakers vs. Warriors</strong></td>
               <td>102 – 97</td>
-              <td class="benchmark">LAL –4.5</td>
               <td>Final</td>
             </tr>
             <tr>
               <td><strong>Nets vs. Celtics</strong></td>
               <td>89 – 91</td>
-              <td class="benchmark">BOS –1.0</td>
               <td>4th Qtr</td>
             </tr>
             <tr>
               <td><strong>Bucks vs. Heat</strong></td>
               <td>105 – 98</td>
-              <td class="benchmark">MIL +2.5</td>
               <td>Halftime</td>
             </tr>
           </tbody>
@@ -143,7 +122,6 @@
             <tr>
               <th>Matchup</th>
               <th>Score</th>
-              <th class="benchmark-col">Benchmark (PPB)</th>
               <th>Status</th>
             </tr>
           </thead>
@@ -151,19 +129,16 @@
             <tr>
               <td><strong>Yankees vs. Red Sox</strong></td>
               <td>5 – 3</td>
-              <td class="benchmark">NYY –1.5</td>
               <td>Final</td>
             </tr>
             <tr>
               <td><strong>Dodgers vs. Mets</strong></td>
               <td>2 – 4</td>
-              <td class="benchmark">NYM +1.0</td>
               <td>Top 8th</td>
             </tr>
             <tr>
               <td><strong>Cubs vs. Cardinals</strong></td>
               <td>3 – 2</td>
-              <td class="benchmark">STL –0.5</td>
               <td>Mid 5th</td>
             </tr>
           </tbody>
@@ -171,64 +146,11 @@
       </div>
     </div>
   </section>
-  <!-- Trending Stories Section -->
-  <section class="trending-stories">
-    <h2>Trending Stories</h2>
-    <div class="stories-grid">
-      <article class="story-card">
-        <img src="news1.jpg" alt="Quarterback leads dramatic comeback" loading="lazy">
-        <h3>Quarterback Leads Dramatic Comeback</h3>
-        <p>Relive the unforgettable finish as the underdogs rally late to stun their rivals.</p>
-        <a href="news.html" class="read-more">Read more</a>
-      </article>
-      <article class="story-card">
-        <img src="news2.jpg" alt="Rookie sensation sets scoring record" loading="lazy">
-        <h3>Rookie Sensation Sets Scoring Record</h3>
-        <p>The league's youngest star just rewrote the record books—here's how he did it.</p>
-        <a href="news.html" class="read-more">Read more</a>
-      </article>
-      <article class="story-card">
-        <img src="news3.jpg" alt="Inside the league's coaching shake‑ups" loading="lazy">
-        <h3>Inside the League's Coaching Shake‑Ups</h3>
-        <p>A closer look at the strategic changes reshaping teams ahead of the playoffs.</p>
-        <a href="news.html" class="read-more">Read more</a>
-      </article>
-      <article class="story-card">
-        <img src="news4.jpg" alt="Top contenders face off in early-season clash" loading="lazy">
-        <h3>Top Contenders Face Off in Early‑Season Clash</h3>
-        <p>The first big matchup of the year offers a preview of championship aspirations.</p>
-        <a href="news.html" class="read-more">Read more</a>
-      </article>
-    </div>
-  </section>
-  <!-- Podcasts & Videos Section -->
-  <section class="media-section">
-    <h2>Podcasts & Videos</h2>
-    <div class="media-grid">
-      <div class="media-card">
-        <h3>The Weekly Rundown</h3>
-        <p>Dive into the biggest stories and analysis with our hosts every Monday.</p>
-        <a href="podcasts.html" class="media-link">Listen now</a>
-      </div>
-      <div class="media-card">
-        <h3>Top 10 Plays of the Week</h3>
-        <p>Catch all the jaw‑dropping highlights you might have missed.</p>
-        <a href="videos.html" class="media-link">Watch now</a>
-      </div>
-      <div class="media-card">
-        <h3>Behind the Benchmarks</h3>
-        <p>Learn how our Performance Power Benchmark is calculated and what it means.</p>
-        <a href="benchmarks.html" class="media-link">Discover more</a>
-      </div>
-    </div>
-  </section>
-  <!-- Community Call to Action -->
   <section class="community-cta">
     <h2>Join the Hey Blue! Community</h2>
     <p>Earn points for reading articles, sharing highlights and supporting your favorite teams. Unlock exclusive rewards along the way!</p>
     <a href="community.html" class="btn-secondary">Sign up now</a>
   </section>
-  <!-- Footer -->
   <footer class="site-footer">
     <div class="footer-content">
       <img src="logo_new.png" alt="Hey Blue! Sports logo showing a baseball umpire making a call" loading="lazy">
