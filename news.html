@@ -40,12 +40,6 @@
   </header>
   <!-- Hero section for news page -->
   <section class="hero">
-    <!-- Use existing hero images as a rotating backdrop -->
-    <div class="slides">
-      <div class="slide" style="background-image: url('hero1.jpg');"></div>
-      <div class="slide" style="background-image: url('hero2.jpg');"></div>
-      <div class="slide" style="background-image: url('hero3.jpg');"></div>
-    </div>
     <div class="hero-content">
       <h1>Latest News</h1>
       <p>Stay informed with breaking headlines, in‑depth analysis and expert commentary across every sport.</p>
@@ -56,40 +50,52 @@
     <h2>Headlines</h2>
     <div class="stories-grid">
       <article class="story-card">
-        <img src="news1.png" alt="Artistic depiction of football excitement" loading="lazy">
-        <h3>Underdogs Triumph in Stunning Upset</h3>
-        <p>An unlikely team rallies late to secure a victory nobody saw coming. We break down the key plays and what’s next.</p>
-        <a href="#" class="read-more">Read full story</a>
+        <img src="news1.png" alt="Abstract sports illustration with football themes" loading="lazy">
+        <div class="story-card-content">
+          <h3>Underdogs Triumph in Stunning Upset</h3>
+          <p>An unlikely team rallies late to secure a victory nobody saw coming. We break down the key plays and what’s next.</p>
+          <a href="#" class="read-more">Read full story</a>
+        </div>
       </article>
       <article class="story-card">
         <img src="news2.png" alt="Abstract basketball energy" loading="lazy">
-        <h3>Rising Star Dominates the Court</h3>
-        <p>A new face in the league puts on a show for the ages. Discover the training secrets behind the performance.</p>
-        <a href="#" class="read-more">Read full story</a>
+        <div class="story-card-content">
+          <h3>Rising Star Dominates the Court</h3>
+          <p>A new face in the league puts on a show for the ages. Discover the training secrets behind the performance.</p>
+          <a href="#" class="read-more">Read full story</a>
+        </div>
       </article>
       <article class="story-card">
         <img src="news3.png" alt="Stylized baseball dynamics" loading="lazy">
-        <h3>Pitcher’s Duel Decided by Late Homer</h3>
-        <p>Two pitchers traded zeroes until a moment of brilliance decided the outcome. We revisit every inning.</p>
-        <a href="#" class="read-more">Read full story</a>
+        <div class="story-card-content">
+          <h3>Pitcher’s Duel Decided by Late Homer</h3>
+          <p>Two pitchers traded zeroes until a moment of brilliance decided the outcome. We revisit every inning.</p>
+          <a href="#" class="read-more">Read full story</a>
+        </div>
       </article>
       <article class="story-card">
         <img src="news2.png" alt="Abstract basketball energy" loading="lazy">
-        <h3>Historic Comeback Sends Crowd Into Frenzy</h3>
-        <p>Down by double digits, the home side mounted a furious rally to thrill fans and shock pundits alike.</p>
-        <a href="#" class="read-more">Read full story</a>
+        <div class="story-card-content">
+          <h3>Historic Comeback Sends Crowd Into Frenzy</h3>
+          <p>Down by double digits, the home side mounted a furious rally to thrill fans and shock pundits alike.</p>
+          <a href="#" class="read-more">Read full story</a>
+        </div>
       </article>
       <article class="story-card">
-        <img src="news1.png" alt="Artistic depiction of football excitement" loading="lazy">
-        <h3>Strategy Shake‑Up Pays Off for Contenders</h3>
-        <p>A bold tactical adjustment changed the momentum of the season. We explore the thinking behind it.</p>
-        <a href="#" class="read-more">Read full story</a>
+        <img src="news1.png" alt="Abstract sports illustration with football themes" loading="lazy">
+        <div class="story-card-content">
+          <h3>Strategy Shake‑Up Pays Off for Contenders</h3>
+          <p>A bold tactical adjustment changed the momentum of the season. We explore the thinking behind it.</p>
+          <a href="#" class="read-more">Read full story</a>
+        </div>
       </article>
       <article class="story-card">
         <img src="news3.png" alt="Stylized baseball dynamics" loading="lazy">
-        <h3>Rivalry Renewed: Showdown of the Year</h3>
-        <p>Two long‑time adversaries meet again in a matchup loaded with history and high stakes. Catch our preview.</p>
-        <a href="#" class="read-more">Read full story</a>
+        <div class="story-card-content">
+          <h3>Rivalry Renewed: Showdown of the Year</h3>
+          <p>Two long‑time adversaries meet again in a matchup loaded with history and high stakes. Catch our preview.</p>
+          <a href="#" class="read-more">Read full story</a>
+        </div>
       </article>
     </div>
   </section>
@@ -97,19 +103,31 @@
   <section class="community-cta">
     <h2>Join the Hey Blue! Community</h2>
     <p>Earn points for reading articles, sharing highlights and supporting your favorite teams. Unlock exclusive rewards along the way!</p>
-    <a href="community.html" class="btn-secondary">Sign up now</a>
+    <a href="community.html" class="btn btn-secondary">Sign up now</a>
   </section>
   <!-- Footer -->
   <footer class="site-footer">
-    <div class="footer-content">
-      <img src="logo_new.png" alt="Hey Blue! Sports logo showing a baseball umpire making a call" loading="lazy">
-      <p>&copy; 2025 Hey Blue! Sports. All rights reserved.</p>
+    <div class="container footer-content">
+      <div class="logo">
+        <img src="logo_new.png" alt="Hey Blue! Sports logo showing a baseball umpire making a call" loading="lazy">
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="news.html">News</a>
+        <a href="benchmarks.html">Benchmarks</a>
+        <a href="scores.html">Scores</a>
+        <a href="videos.html">Videos</a>
+        <a href="podcasts.html">Podcasts</a>
+        <a href="community.html">Community</a>
+        <a href="store.html">Store</a>
+      </div>
       <ul class="social-icons">
         <li><a href="#" aria-label="Follow us on Facebook"><img src="icon-facebook.svg" alt="" /></a></li>
         <li><a href="#" aria-label="Follow us on Twitter"><img src="icon-twitter.svg" alt="" /></a></li>
         <li><a href="#" aria-label="Follow us on Instagram"><img src="icon-instagram.svg" alt="" /></a></li>
       </ul>
     </div>
+    <p>&copy; 2025 Hey Blue! Sports. All rights reserved.</p>
   </footer>
   <script src="script.js"></script>
 </body>
