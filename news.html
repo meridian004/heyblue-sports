@@ -1,129 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hey Blue! Sports – Latest News</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <!-- Site Header -->
-    <!-- Topbar with trending topics -->
-    <div class="topbar">
-      <ul class="trending-list">
-        <li><a href="#">#SuperBowl</a></li>
-        <li><a href="#">#MarchMadness</a></li>
-        <li><a href="#">#WorldSeries</a></li>
-        <li><a href="#">#DraftDay</a></li>
-        <li><a href="#">#StanleyCup</a></li>
-        <li><a href="#">#UFC300</a></li>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Catch up on the latest sports headlines, analysis and features from Hey Blue! Sports.">
+  <title>News – Hey Blue! Sports</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.webmanifest">
+</head>
+<body>
+  <!-- Topbar with trending topics -->
+  <div class="topbar">
+    <ul class="trending-list">
+      <li><a href="#">#SuperBowl</a></li>
+      <li><a href="#">#MarchMadness</a></li>
+      <li><a href="#">#WorldSeries</a></li>
+      <li><a href="#">#DraftDay</a></li>
+      <li><a href="#">#StanleyCup</a></li>
+      <li><a href="#">#UFC300</a></li>
+    </ul>
+  </div>
+  <!-- Navigation bar -->
+  <header class="navbar">
+    <a href="index.html" class="logo" title="Hey Blue! Sports">
+      <img src="logo_new.png" alt="Hey Blue! Sports logo showing a baseball umpire making a call" />
+    </a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="benchmarks.html">Benchmarks</a></li>
+        <li><a href="scores.html">Scores</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="podcasts.html">Podcasts</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="store.html">Store</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Hero section for news page -->
+  <section class="hero">
+    <!-- Use existing hero images as a rotating backdrop -->
+    <div class="slides">
+      <div class="slide" style="background-image: url('hero1.jpg');"></div>
+      <div class="slide" style="background-image: url('hero2.jpg');"></div>
+      <div class="slide" style="background-image: url('hero3.jpg');"></div>
+    </div>
+    <div class="hero-content">
+      <h1>Latest News</h1>
+      <p>Stay informed with breaking headlines, in‑depth analysis and expert commentary across every sport.</p>
+    </div>
+  </section>
+  <!-- Main news list -->
+  <section class="trending-stories">
+    <h2>Headlines</h2>
+    <div class="stories-grid">
+      <article class="story-card">
+        <img src="news1.png" alt="Artistic depiction of football excitement" loading="lazy">
+        <h3>Underdogs Triumph in Stunning Upset</h3>
+        <p>An unlikely team rallies late to secure a victory nobody saw coming. We break down the key plays and what’s next.</p>
+        <a href="#" class="read-more">Read full story</a>
+      </article>
+      <article class="story-card">
+        <img src="news2.png" alt="Abstract basketball energy" loading="lazy">
+        <h3>Rising Star Dominates the Court</h3>
+        <p>A new face in the league puts on a show for the ages. Discover the training secrets behind the performance.</p>
+        <a href="#" class="read-more">Read full story</a>
+      </article>
+      <article class="story-card">
+        <img src="news3.png" alt="Stylized baseball dynamics" loading="lazy">
+        <h3>Pitcher’s Duel Decided by Late Homer</h3>
+        <p>Two pitchers traded zeroes until a moment of brilliance decided the outcome. We revisit every inning.</p>
+        <a href="#" class="read-more">Read full story</a>
+      </article>
+      <article class="story-card">
+        <img src="news2.png" alt="Abstract basketball energy" loading="lazy">
+        <h3>Historic Comeback Sends Crowd Into Frenzy</h3>
+        <p>Down by double digits, the home side mounted a furious rally to thrill fans and shock pundits alike.</p>
+        <a href="#" class="read-more">Read full story</a>
+      </article>
+      <article class="story-card">
+        <img src="news1.png" alt="Artistic depiction of football excitement" loading="lazy">
+        <h3>Strategy Shake‑Up Pays Off for Contenders</h3>
+        <p>A bold tactical adjustment changed the momentum of the season. We explore the thinking behind it.</p>
+        <a href="#" class="read-more">Read full story</a>
+      </article>
+      <article class="story-card">
+        <img src="news3.png" alt="Stylized baseball dynamics" loading="lazy">
+        <h3>Rivalry Renewed: Showdown of the Year</h3>
+        <p>Two long‑time adversaries meet again in a matchup loaded with history and high stakes. Catch our preview.</p>
+        <a href="#" class="read-more">Read full story</a>
+      </article>
+    </div>
+  </section>
+  <!-- CTA encouraging visitors to join the community -->
+  <section class="community-cta">
+    <h2>Join the Hey Blue! Community</h2>
+    <p>Earn points for reading articles, sharing highlights and supporting your favorite teams. Unlock exclusive rewards along the way!</p>
+    <a href="community.html" class="btn-secondary">Sign up now</a>
+  </section>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <img src="logo_new.png" alt="Hey Blue! Sports logo showing a baseball umpire making a call" loading="lazy">
+      <p>&copy; 2025 Hey Blue! Sports. All rights reserved.</p>
+      <ul class="social-icons">
+        <li><a href="#" aria-label="Follow us on Facebook"><img src="icon-facebook.svg" alt="" /></a></li>
+        <li><a href="#" aria-label="Follow us on Twitter"><img src="icon-twitter.svg" alt="" /></a></li>
+        <li><a href="#" aria-label="Follow us on Instagram"><img src="icon-instagram.svg" alt="" /></a></li>
       </ul>
     </div>
-
-    <!-- Navigation Bar -->
-    <header class="navbar">
-      <!-- Logo image wrapped in a link back to the home page -->
-      <a href="index.html" class="logo" title="Hey Blue! Sports">
-        <!-- Updated logo depicting a baseball umpire mid-call -->
-        <img src="logo_new.png" alt="Hey Blue! Sports logo showing a baseball umpire making a call" />
-      </a>
-      <nav class="main-nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="news.html">News</a></li>
-          <li><a href="#">Odds</a></li>
-          <li><a href="#">Scores</a></li>
-          <li><a href="#">Videos</a></li>
-          <li><a href="#">Podcasts</a></li>
-          <li><a href="#">Community</a></li>
-          <li><a href="#">Store</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <!-- Sub‑Hero Section -->
-    <!-- Sub-Hero section uses one of our custom slides as a static backdrop for the news page -->
-    <section class="hero" style="background-image: url('hero2.jpg');">
-      <div class="hero-content">
-        <h1>Latest News</h1>
-        <p>
-          Catch up on the newest stories, game analyses and sports headlines from
-          across the world. This page will dynamically load articles based on
-          your interests.
-        </p>
-      </div>
-    </section>
-
-    <!-- News Articles Section -->
-    <section class="articles">
-      <h2>Latest News</h2>
-      <div class="articles-grid">
-        <article class="article-card">
-          <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80" alt="Team huddle" />
-          <div class="article-content">
-            <span class="category">Opinion</span>
-            <h3>Is the dynasty over? Breaking down the champs</h3>
-            <p>This opinion piece explores whether last season’s champions can repeat or if the league has caught up.</p>
-          </div>
-        </article>
-        <article class="article-card">
-          <img src="https://images.unsplash.com/photo-1509475826633-fed577a2c71b?auto=format&fit=crop&w=600&q=80" alt="Fans cheering" />
-          <div class="article-content">
-            <span class="category">Update</span>
-            <h3>Fans return to stadiums in record numbers</h3>
-            <p>After years of restrictions, teams are seeing record attendance as fans flock back to live events.</p>
-          </div>
-        </article>
-        <article class="article-card">
-          <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=600&q=80" alt="Basketball court" />
-          <div class="article-content">
-            <span class="category">Feature</span>
-            <h3>Inside look: The training regimen of top athletes</h3>
-            <p>We go behind the scenes to see how the best in the world prepare mentally and physically.</p>
-          </div>
-        </article>
-        <article class="article-card">
-          <img src="https://images.unsplash.com/photo-1507423919413-0e6a4a4ec936?auto=format&fit=crop&w=600&q=80" alt="Trade rumors" />
-          <div class="article-content">
-            <span class="category">Rumor</span>
-            <h3>Blockbuster trade whispers heating up</h3>
-            <p>Sources hint that a major trade involving multiple All‑Stars could be announced any day.</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- Sign‑up Call To Action -->
-    <section class="signup">
-      <h2>Never Miss a Beat</h2>
-      <p>Join our community to unlock personalised news and earn rewards for interacting with our content.</p>
-      <a href="#" class="btn-secondary btn-signup">Join Now</a>
-    </section>
-
-    <!-- Site Footer -->
-    <footer class="footer">
-      <div class="footer-container">
-        <div class="footer-left">
-          <img src="logo_new.png" alt="Hey Blue! Sports logo" class="footer-logo" />
-          <p>&copy; 2025 Hey&nbsp;Blue! Sports — All rights reserved.</p>
-        </div>
-        <div class="footer-right">
-          <a href="#" aria-label="Facebook" class="social-link">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0-5.522-4.477-10-10-10S2 6.478 2 12c0 4.99 3.657 9.128 8.438 9.876v-6.987H7.898v-2.89h2.54V9.797c0-2.506 1.493-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.261c-1.243 0-1.63.771-1.63 1.562v1.874h2.773l-.443 2.89h-2.33v6.987C18.343 21.128 22 16.99 22 12Z"/></svg>
-          </a>
-          <a href="#" aria-label="Twitter" class="social-link">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M8.29 20c7.547 0 11.675-6.154 11.675-11.495 0-.175 0-.349-.012-.522A8.18 8.18 0 0 0 22 5.92a8.19 8.19 0 0 1-2.357.637 4.07 4.07 0 0 0 1.804-2.23 8.155 8.155 0 0 1-2.605.981A4.107 4.107 0 0 0 16.616 4c-2.266 0-4.104 1.82-4.104 4.066 0 .319.036.63.105.93C8.044 8.87 4.977 7.148 2.91 4.713a4.028 4.028 0 0 0-.555 2.043c0 1.41.724 2.656 1.823 3.389a4.09 4.09 0 0 1-1.86-.51v.052a4.077 4.077 0 0 0 3.292 3.993 4.1 4.1 0 0 1-1.853.07 4.1 4.1 0 0 0 3.834 2.82A8.233 8.233 0 0 1 2 18.407a11.616 11.616 0 0 0 6.29 1.84"/></svg>
-          </a>
-          <a href="#" aria-label="Instagram" class="social-link">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.2 0 3.584.012 4.85.07 1.17.056 1.97.245 2.422.413a4.9 4.9 0 0 1 1.76 1.145 4.9 4.9 0 0 1 1.145 1.76c.168.452.357 1.252.413 2.422.058 1.266.07 1.65.07 4.85s-.012 3.584-.07 4.85c-.056 1.17-.245 1.97-.413 2.422a4.9 4.9 0 0 1-1.145 1.76 4.9 4.9 0 0 1-1.76 1.145c-.452.168-1.252.357-2.422.413-1.266.058-1.65.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.056-1.97-.245-2.422-.413a4.9 4.9 0 0 1-1.76-1.145 4.9 4.9 0 0 1-1.145-1.76c-.168-.452-.357-1.252-.413-2.422-.058-1.266-.07-1.65-.07-4.85s.012-3.584.07-4.85c.056-1.17.245-1.97.413-2.422a4.9 4.9 0 0 1 1.145-1.76 4.9 4.9 0 0 1 1.76-1.145c.452-.168 1.252-.357 2.422-.413 1.266-.058 1.65-.07 4.85-.07Zm0-2.163C8.755 0 8.333.013 7.052.072 5.775.131 4.63.323 3.678.688a7.068 7.068 0 0 0-2.57 1.629A7.068 7.068 0 0 0 .688 4.887C.323 5.84.131 6.984.072 8.26.013 9.541 0 9.963 0 12s.013 2.459.072 3.74c.059 1.276.251 2.42.616 3.373a7.068 7.068 0 0 0 1.629 2.57 7.068 7.068 0 0 0 2.57 1.629c.953.365 2.097.557 3.373.616 1.281.059 1.703.072 3.74.072s2.459-.013 3.74-.072c1.276-.059 2.42-.251 3.373-.616a7.068 7.068 0 0 0 2.57-1.629 7.068 7.068 0 0 0 1.629-2.57c.365-.953.557-2.097.616-3.373.059-1.281.072-1.703.072-3.74s-.013-2.459-.072-3.74c-.059-1.276-.251-2.42-.616-3.373a7.068 7.068 0 0 0-1.629-2.57 7.068 7.068 0 0 0-2.57-1.629c-.953-.365-2.097-.557-3.373-.616C14.459.013 14.037 0 12 0ZM12 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324Zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998Zm6.406-11.845a1.44 1.44 0 1 1-2.881 0 1.44 1.44 0 0 1 2.881 0Z"/></svg>
-          </a>
-          <a href="#" aria-label="YouTube" class="social-link">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19.615 3.184C21.382 3.64 22 5.119 22 7.663v8.673c0 2.544-.618 4.023-2.385 4.479-2.654.699-13.593.699-16.246 0C1.382 20.359.764 18.88.764 16.336V7.663c0-2.544.618-4.023 2.385-4.479 2.654-.699 13.593-.699 16.246 0Zm-9.118 5.358v6.916l6.62-3.458-6.62-3.458Z"/></svg>
-          </a>
-        </div>
-      </div>
-    </footer>
-
-    <script src="script.js"></script>
-  </body>
+  </footer>
+  <script src="script.js"></script>
+</body>
 </html>
